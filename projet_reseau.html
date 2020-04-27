@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<style>
+    .largeur-barre {
+        display: flex;
+        width: 400px;
+        height: 20px;
+    }
+    .bouton-dimension{
+        display: flex;
+        width: 115px;
+        height: 30px;
+    }
+    .position-logo {
+        display: flex;
+    }
+    .position-gmail {
+        display: flex;    
+    }
+    .position-image {
+        display: flex;
+    }
+    #position-recherche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Gmail-image {
+        display: flex;
+        justify-content: flex-end;        
+    }
+    #Store {
+        display: flex;
+        justify-content: flex-start;
+    }
+</style>
+
+<main>
+    <div id="Store">
+        <a href="https://about.google/">About</a>
+    
+        <a href="https://store.google.com/">Store</a>
+    </div>
+    <div id="Gmail-image">
+        <a href="https://images.google.com/">Images</a>
+
+        <a href="https://mail.google.com/">Gmail</a>
+        <form action="https://about.google/intl/en/products/?tab=wh">
+            <button type="menu" ></button>
+        </form>
+    </div>
+    <div id="position-recherche"> 
+        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="position-logo"></a>
+    </div>
+    <!--Bouton et barre de recherche Google-->
+    <div id="position-recherche">
+        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden" >
+            <input autocomplete="on" class="largeur-barre" name="q" placeholder="Google search" required="required"  type="text">
+            <button class="button bouton-dimension" type="submit">Google Search</button>
+    </div>
+</main>
