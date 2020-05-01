@@ -1,47 +1,126 @@
 <!DOCTYPE html>
 
 <style>
-    .d1{background:LightSkyBlue;}
+    .d1{text-align: center; vertical-align: sub; background:LightSkyBlue;}
     .d2{background:LightSalmon;}
-    .d3{background:PaleTurquoise;}
-    .d4{background:LightPink;}
-    .d5{background:PaleGreen;}
+    .d3{text-align: center; background:PaleTurquoise;}
+    .d4{background:wheat;}
+    .d5{text-align:center; background:PaleGreen;}
+    .d6{background: whitesmoke;}
+    .d7{background: yellow;}
     .container {
         font-size: 15px;
         width: 100%;
         background: white;
         display: grid;       
     }
-    #gmail-image {
-        display: flex;
-        justify-content: flex-end;
+    #gmail {
+        margin-top: 1%;
+        margin-left: 80%;
+    }
+    #image {
+        margin-top: 1%;
+        margin-left: 1%;
     }
     #store {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    #about {
+        margin-top: 1%;
+        margin-left: 1%;        
+    }
+    #app {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    #account {
+        margin-top: 0.5%;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 90px;
+        height: 35px;
+        background-color: deepskyblue;
+        color: white;
+    }
+    #privacy {
+        margin-left: 74%;
+    }
+    #terms {
+        margin-left: 1%;
+    }
+    #settings {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    #left {
+        margin-left: 1%;
+    }
+    .largeur-barre {
+        margin-top: 1%;
+        width: 500px;
+        height: 25px;
+    }
+    .bouton-dimension {
+        margin-top: 1%;
+        width: 120px;
+        height: 35px;
+    }
+    .position-logo {
+        margin-top: 10%;
+    }
+    .space {
+        margin-top: 20%;
+    }
+    .canada {
+        margin-left: 1%;
+    }
+    .haut {
         display: flex;
-        justify-content: flex-start;
     } 
 </style>
 
 <main>
     <div class="container">
         <div class="d2">
-            <a href="https://about.google/">About</a>
-            <a href="https://store.google.com/">Store</a>
-            <div id="gmail-image">
-                <a href="https://images.google.com/">Images</a>
-                <a href="https://mail.google.com/">Gmail</a>
-                <div><a href="#"><img src="https://photos.app.goo.gl/MDQqcjVesaWWAxAy7"></a></div>
-                <div><a href="#"><img src="https://photos.app.goo.gl/MDQqcjVesaWWAxAy7"></a></div>
+            <div class="haut">
+                <a id="about" href="https://about.google/">About</a>
+                <a id="store" href="https://store.google.com/">Store</a>
+                <a id="gmail" href="https://mail.google.com/">Gmail</a>
+                <a id="image" href="https://images.google.com/">Images</a>
+                <a id="app" href="#"><img src="https://photos.app.goo.gl/MDQqcjVesaWWAxAy7"></a>
+                <button id="account" class="button" type="submit">Sign in</button>
             </div> 
         </div>
         <div class="d5"><a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="position-logo"></a></div>
     <!--Bouton et barre de recherche Google-->
-        <div id="position-recherche">
+        <div>
             <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-                <input name="sitesearch" type="hidden" >
-                <input autocomplete="on" class="largeur-barre" name="q" placeholder="Google search" required="required"  type="text">
-                <button class="button bouton-dimension" type="submit">Google Search</button>
-                <button class="button bouton-dimension" type="submit">I'm feeling lucky</button>
+                <div class="d1">
+                    <input name="sitesearch" type="hidden" >
+                    <input autocomplete="on" class="largeur-barre" name="q" placeholder="Google search" required="required"  type="text">
+                </div>
+                <div class="d3">
+                    <button class="button bouton-dimension" type="submit">Google Search</button>
+                    <button class="button bouton-dimension" type="submit">I'm feeling lucky</button>
+                </div>
+            </form>
+        </div>
+        <div class="d4">
+            <p class="space"></p>
+        </div>
+        <div class="d6">
+           <p class="canada">Canada</p> 
+        </div>
+        <div class="d7">
+            <div class="haut">
+                <a id="left" href="https://ads.google.com/">Advertising</a>
+                <a id="left" href="https://smallbusiness.withgoogle.com/">Business</a>
+                <a id="terms" href="https://www.google.com/search/howsearchworks/?fg=1">How&nbsp;Search&nbsp;works</a>
+                <a id="privacy" href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                <a id="terms" href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a id="settings" href="#">Settings</a>
+            </div>
         </div>
     </div>
 </main>
